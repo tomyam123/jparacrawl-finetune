@@ -67,6 +67,7 @@ python3 $FAIRSEQ/preprocess.py \
 ######################################
 python3 $FAIRSEQ/train.py $DATA_DIR \
     --restore-file $PRETRAINED_MODEL_FILE \
+    --reset-optimizer \
     --arch transformer \
     --optimizer adam \
     --adam-betas '(0.9, 0.98)' \
